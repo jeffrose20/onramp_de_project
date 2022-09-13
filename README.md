@@ -19,7 +19,7 @@ You will need to pull Spotify data for 20 of your favorite artists.  For each ar
 
 You will start out by using the Spotify API to get your data.  To make your life easier, you can use the existing Python package called `spotipy`.  This is not a requirement, however.  If you prefer, you can use the `requests` module, or any method you like to pull down the data.  We just ask that you do this using Python.
 
-As a hint, I am including the following `spotipy` functions which you can use to get this data from the API if you choose.
+As a hint, we are including the following `spotipy` functions which you can use to get this data from the API if you choose.
 
 **Artist** https://spotipy.readthedocs.io/en/master/#spotipy.client.Spotify.search  
 **Album** https://spotipy.readthedocs.io/en/master/#spotipy.client.Spotify.artist_albums  
@@ -106,7 +106,7 @@ In addition to views, you will also need to create 3 data visualisations using P
 ## Deliverables
 You will submit all deliverables via Github in the `submissions` folder.  If you are not familiar, see the primer info at the bottom of this page.
 1. Python code for your API calls, transformations, and visualizations.
-    * Implementation for this portion is up to you.  I include a number of hints and suggestions in this document that you can take into consideration.
+    * Implementation for this portion is up to you.  We include a number of hints and suggestions in this document that you can take into consideration.
     * Your code should be clean, readable, and easy to understand.  In a professional setting this is key because your code will constantly be read and used by others.  Minimize redundant code by using functions when possible.
 2. A SQLite .db file which will contain a database called `spotify.db`
     * This file should contain the following tables: `artist`, `album`, `track`, and `track_feature`.
@@ -120,7 +120,7 @@ You will submit all deliverables via Github in the `submissions` folder.  If you
 ### Getting Spotify Authentication Credentials 
 1. Go to https://developer.spotify.com/dashboard/ and login with your existing Spotify account (if you don't have one, you can create one for free to use).
 2. Once logged in, click on the Dashboard Tab and then click "Create App" and create an app called "onramp_project."
-3. Once inside your app / project, you will see **Client ID** and **Client Secret** near the top left.  These are the values you will need to access the api to pull data.
+3. Once inside your app / project, you will see **Client ID** and **Client Secret** near the top left.  These are the values you will need to access the API to pull data.
 4. Click "Edit Settings" on your app and add http://localhost:8888/callback for the "Redirect URIs" field. 
 
 Alternatively, you can follow along with this tutorial:  https://www.youtube.com/watch?v=3RGm4jALukM
